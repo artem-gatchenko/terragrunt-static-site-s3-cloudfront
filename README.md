@@ -5,15 +5,20 @@ Terragrunt template for create S3 Bucket for static hosting with CloudFront for 
 ## This template will create next:
 
 `S3 Bucket` for static site
+
 `CloudFront` for distribution
+
 `DNS Record` on Route 53 for static site
+
 `Certificate` for DNS name
+
 `IAM User` with full access to S3 bucket and access make CreateInvalidation in CloudFront
 
 
 
 ## Requirements
 Terraform version >= *0.12.9*
+
 AWS provider version >= *2.29*
 
 ## Getting started

@@ -21,3 +21,9 @@ module "s3-static-site" {
   s3_bucket_name     = var.development_s3_bucket_name
   s3_bucket_iam_user = var.development_iam_user
 }
+
+output "S3_Bucket" { value = module.s3-static-site.S3_Bucket}
+output "S3_Region" { value = module.s3-static-site.S3_Region }
+output "Distribution_ID" { value = module.s3-static-site.Distribution_ID }
+output "Access_Key" { value = module.s3-static-site.Access_Key }
+output "Secret_Key" { value = module.s3-static-site.Secret_Key }

@@ -57,12 +57,13 @@ resource "aws_cloudfront_distribution" "cf_distr" {
     }
   }
 
-
   viewer_certificate {
     acm_certificate_arn = "${aws_acm_certificate.cert_cdn.arn}"
     minimum_protocol_version = "TLSv1.1_2016"
     ssl_support_method = "sni-only"
   }
+
+  depends_on = ["aws_acm_certificate_validation.cert_cdn"]
 }
 
 
