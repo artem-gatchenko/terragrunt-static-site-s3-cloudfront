@@ -19,6 +19,8 @@ Terragrunt template for create S3 Bucket for static hosting with CloudFront for 
 ## Requirements
 Terraform version >= *0.12.9*
 
+Terragrunt version >= *0.19.26*
+
 AWS provider version >= *2.29*
 
 ## Getting started
